@@ -19,7 +19,7 @@ CLEAN_FILES=$(patsubst %.md,%.html,$(wildcard book/chapter-*.md)) \
 						crystal-for-rubyists.mobi \
 						*.tgz
 
-all: crystal-for-rubyists-epub.tgz crystal-for-rubyists-pdf.tgz
+all: crystal-for-rubyists-epub.tgz crystal-for-rubyists-pdf.tgz crystal-for-rubyists-mobi.tgz site
 
 crystal-for-rubyists.epub: $(ALL_FILES)
 	pandoc $(EPUB_OPTS) -o $@ $(CONTENTS)

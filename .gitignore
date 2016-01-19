@@ -9,3 +9,4 @@ book/preamble.html
 .cache/
 logs/
 .DS_Store
+.crystal
