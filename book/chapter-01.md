@@ -32,9 +32,7 @@ But the point is to *learn*. and using a language that's very familiar, yet very
 Here's "Hello World" in Crystal:
 
 ~~~ {.ruby}
-
-    puts "Hello, world!"
-
+puts "Hello, world!"
 ~~~
 
 Here's a parallel "Hello World" in Crystal:
