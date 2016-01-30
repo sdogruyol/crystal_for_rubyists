@@ -107,7 +107,7 @@ Let's run it.
 
     $ crystal types.cr
     8
-    5Serdar
+    3Serdar
 
 Awesome! That's method overloading in action. It figured out that we are calling the method with a Number and String and called the appropriate method.
 You can define as many overload methods as you wish.
