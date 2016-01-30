@@ -52,7 +52,7 @@ crystal-for-rubyists-mobi.tgz: crystal-for-rubyists.mobi code.tgz
 
 ship: all
 	git push origin
-	s3deploy
+	bundle exec s3deploy
 
 .PHONY: clean
 

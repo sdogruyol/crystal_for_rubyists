@@ -1,0 +1,25 @@
+GIT
+  remote: git://github.com/sdogruyol/s3deploy.git
+  revision: 7bdf5a7a234e824697a778d0ab51c5277fb0f753
+  specs:
+    s3deploy (0.1.2)
+      aws-s3
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    aws-s3 (0.6.3)
+      builder
+      mime-types
+      xml-simple
+    builder (3.2.2)
+    mime-types (3.0)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2015.1120)
+    xml-simple (1.1.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  s3deploy!
