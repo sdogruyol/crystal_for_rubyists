@@ -44,22 +44,22 @@ To add a new dependency to our project we use `shards`. `shards` is like `bundle
 Let's open up `shard.yml`.
 
 ~~~ {.yaml}
-    name: sample
-    version: 0.1.0
+name: sample
+version: 0.1.0
 
-    authors:
-      - sdogruyol <dogruyolserdar@gmail.com>
+authors:
+  - sdogruyol <dogruyolserdar@gmail.com>
 
-    license: MIT
+license: MIT
 ~~~
 
 This is a default `shard.yml` now let's add [Kemal](https://github.com/sdogruyol/kemal) and build a web app :)
 
 ~~~ {.yaml}
-    dependencies:
-      kemal:
-        github: sdogruyol/kemal
-        branch: master
+dependencies:
+  kemal:
+    github: sdogruyol/kemal
+    branch: master
 ~~~
 
 Install the dependencies:

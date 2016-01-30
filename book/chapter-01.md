@@ -40,24 +40,24 @@ Here's "Hello World" in Crystal:
 Here's a parallel "Hello World" in Crystal:
 
 ~~~ {.ruby}
-    channel = Channel(String).new
-    10.times do
-      spawn {
-        channel.send "Hello?"
-      }
-      puts channel.receive
-    end
+channel = Channel(String).new
+10.times do
+  spawn {
+    channel.send "Hello?"
+  }
+  puts channel.receive
+end
 ~~~
 
 Here's a rough port to Ruby:
 
 
 ~~~ {.ruby}
-    10.times.map do
-      Thread.new do
-        puts "Hello?"
-      end
-    end.each(&:join)
+10.times.map do
+  Thread.new do
+    puts "Hello?"
+  end
+end.each(&:join)
 ~~~
 
 That's it. Note the stuff that's *similar* to Ruby:

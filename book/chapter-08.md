@@ -6,13 +6,13 @@ Did you remember Chapter 1? We did a concurrent Hello World!
 Here's a quick reminder.
 
 ~~~ {.ruby}
-    channel = Channel(String).new
-    10.times do
-      spawn {
-        channel.send "Hello?"
-      }
-      puts channel.receive
-    end
+channel = Channel(String).new
+10.times do
+  spawn {
+    channel.send "Hello?"
+  }
+  puts channel.receive
+end
 ~~~
 
 In Crystal we use the keyword `spawn` to make something work in the background without blocking the main execution.
