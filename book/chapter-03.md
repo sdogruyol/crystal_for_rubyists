@@ -1,5 +1,7 @@
-Writing Your First Crystal Program
-===============================
+\newpage
+
+# Writing Your First Crystal Program
+
 
 Okay! Let's get down to it: in order to call yourself an "X Programmer,"
 you must write "Hello, world" in X. So let's do it. Open up a text file:

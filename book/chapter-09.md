@@ -1,5 +1,6 @@
-Macros and Metaprogramming
-======
+\newpage
+
+# Macros and Metaprogramming
 
 We love Ruby because of its' dynamic nature and metaprogramming! Unlike Ruby, Crystal is a compiled language.
 That's why there are some key differences.

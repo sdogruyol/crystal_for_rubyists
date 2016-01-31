@@ -1,5 +1,7 @@
-Testing
-=======
+\newpage
+
+# Testing
+
 
 Rubyists love testing, so before we go any farther, let's talk about
 testing. In Crystal, there is a testing framework built in, and it's
@@ -76,7 +78,7 @@ describe Sample do
     true.should eq(true)
   end
 end
-``
+```
 
 Rerun the specs.
 

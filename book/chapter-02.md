@@ -1,5 +1,7 @@
-Installing Crystal
-===============
+\newpage
+
+# Installing Crystal
+
 
 Binary installers
 -----------------

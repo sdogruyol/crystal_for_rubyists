@@ -1,5 +1,6 @@
-Concurrency and Channels
-========================
+\newpage
+
+# Concurrency and Channels
 
 Did you remember Chapter 1? We did a concurrent Hello World!
 

@@ -1,5 +1,6 @@
-Types and Method Overloading
-============================
+\newpage
+
+# Types and Method Overloading
 
 Crystal is like Ruby, but it's not Ruby!
 

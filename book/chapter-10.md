@@ -1,5 +1,6 @@
-C Bindings
-==========
+\newpage
+
+# C Bindings
 
 There are lots of useful C libraries out there. It's important that we make use of
 them instead of rewriting every single of them.

@@ -1,5 +1,7 @@
-FizzBuzz
-========
+\newpage
+
+# FizzBuzz
+
 
 Of course, the first thing that your job interview for that cushy new
 Crystal job will task you with is building FizzBuzz. Let's do it!
