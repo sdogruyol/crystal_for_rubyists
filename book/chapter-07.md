@@ -8,23 +8,23 @@ the types and the compiler is smart enough to do `type inference`.
 
 So why do we need types? Let's start with something simple.
 
-~~~ {.ruby}
+```ruby
 def add(x, y)
   x + y
 end
 
 add 3, 5 # 8
-~~~
+```
 
 This is the same in Ruby! We just defined a method that adds two numbers and return.
 What if we try to add a number to a string?
 
 First let's do that in Ruby.
 
-~~~ {.ruby}
+```ruby
 add 3, "Serdar"
 TypeError: String can't be coerced into Fixnum
-~~~
+```
 
 What??? We just got a `TypeError` but we don't have to care about types in Ruby ( or not :)).
 This is also a `runtime error` meaning that your program just crashed at runtime (definitely not good).
@@ -58,13 +58,13 @@ and you catch error before running the code. Lovely!
 
 Now let's add some types and restrict that method to only accept `Number`s.
 
-~~~ {.ruby}
+```ruby
 def add(x : Number, y : Number)
   x + y
 end
 
 puts add 3, "Serdar"
-~~~
+```
 
 Run it.
 
@@ -89,7 +89,7 @@ Method overloading is having different methods with the same name and different 
 Let's overload our `add` method and make it work with a String.
 
 
-~~~ {.ruby}
+```ruby
 def add(x : Number, y : Number)
   x + y
 end
@@ -101,7 +101,7 @@ end
 puts add 3, 5
 
 puts add 3, "Serdar"
-~~~
+```
 
 Let's run it.
 

@@ -24,20 +24,20 @@ So we could learn a lot from a language that handles concurrency well,
 and is fast and simple. We don't want to sacrifice anonymous functions, pretty syntax,
 or not making `AbstractFactoryFactoryImpls` just to get work done.
 
-I think that that language is Crystal.
+I think that language is *Crystal*.
 
 Now: Crystal is not perfect, by far. It is getting better.
 But the point is to *learn*. and using a language that's very familiar, yet very different, can teach us a lot.
 
 Here's "Hello World" in Crystal:
 
-~~~ {.ruby}
+```ruby
 puts "Hello, world!"
-~~~
+```
 
 Here's a parallel "Hello World" in Crystal:
 
-~~~ {.ruby}
+```ruby
 channel = Channel(String).new
 10.times do
   spawn {
@@ -45,24 +45,23 @@ channel = Channel(String).new
   }
   puts channel.receive
 end
-~~~
+```
 
 Here's a rough port to Ruby:
 
 
-~~~ {.ruby}
+```ruby
 10.times.map do
   Thread.new do
     puts "Hello?"
   end
 end.each(&:join)
-~~~
+```
 
 That's it. Note the stuff that's *similar* to Ruby:
 
 -   Pretty same syntax.
--   Variables, while statically typed, have inference, so we don't need
-    to declare types
+-   Variables, while statically typed, have inference, so we don't need to declare types
 
 Here's some stuff that's *different*:
 

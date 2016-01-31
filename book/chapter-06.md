@@ -20,7 +20,7 @@ First, let's create our project.
 
 Let's write our first failing test. Open up `/spec/fizzbuz_spec.cr`
 
-~~~ {.ruby}
+```ruby
 require "./spec_helper"
 
 describe Fizzbuzz do
@@ -28,7 +28,7 @@ describe Fizzbuzz do
     div_by_three(1).should eq(false)
   end
 end
-~~~
+```
 
 And run it:
 
@@ -41,13 +41,13 @@ And run it:
 This makes sense: We haven't defined any method yet. Let's define
 one:
 
-~~~ {.ruby}
+```ruby
 require "./fizzbuzz/*"
 
 def div_by_three(n)
   false
 end
-~~~
+```
 
 Akin to Ruby, the value of the last expression gets returned.
 
@@ -62,7 +62,7 @@ TDD means do the simplest thing! Now that we've defined our method, let's compil
 
 Awesome! We pass! Let's write another test, and see what happens:
 
-~~~ {.ruby}
+```ruby
 require "./spec_helper"
 
 describe Fizzbuzz do
@@ -74,7 +74,7 @@ describe Fizzbuzz do
     div_by_three(3).should eq(true)
   end
 end
-~~~
+```
 
 Run it!
 
@@ -101,7 +101,7 @@ Run it!
 
 We have 1 failure. Let's make this pass.
 
-~~~ {.ruby}
+```ruby
 require "./fizzbuzz/*"
 
 def div_by_three(n)
@@ -111,7 +111,7 @@ def div_by_three(n)
     false
   end
 end
-~~~
+```
 
 Run it.
 
@@ -127,11 +127,11 @@ expected. Go ahead and try to refactor this into a one-liner.
 
 Done? How'd you do? Here's mine:
 
-~~~ {.ruby}
+```ruby
 def div_by_three(n)
   n % 3 == 0
 end
-~~~
+```
 
 Remember, the value of the last expression gets returned.
 
@@ -156,11 +156,11 @@ Okay! Let's talk about the main program now. We've got the tools to
 build FizzBuzz, let's make it work. First thing we need to do is print
 out all the numbers from one to 100. It's easy!
 
-~~~ {.ruby}
+```ruby
 1...100.times do |num|
   puts num
 end
-~~~
+```
 
 Step one: print **something** 100 times. If you run this via
 `crystal build src/fizzbuzz.cr && ./fizzbuzz` you should see `num` printed
@@ -169,7 +169,7 @@ they're actually not even in the executable:
 
 Now we can put the two together:
 
-~~~ {.ruby}
+```ruby
 1...100.times do |num|
   answer = ""
 
@@ -185,11 +185,11 @@ Now we can put the two together:
 
   puts answer
 end
-~~~
+```
 
 Because the `if` returns a value, we could also do something like this:
 
-~~~ {.ruby}
+```ruby
 1..100.times do |num|
   answer = if div_by_fifteen num
     "FizzBuzz"
@@ -203,7 +203,7 @@ Because the `if` returns a value, we could also do something like this:
 
   puts answer
 end
-~~~
+```
 
 Try running it.
 

@@ -10,9 +10,9 @@ Crystal programs end in `.cr`:
 
 Put this in it:
 
-~~~ {.ruby}
+```ruby
 puts "Hello, world."
-~~~
+```
 
 And compile it with `crystal`:
 

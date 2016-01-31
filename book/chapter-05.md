@@ -27,7 +27,7 @@ In Crystal a `class` is tested with corresponding `_spec` file. In this case `sp
 Let's see what's inside. Open up `spec/sample_spec.cr`
 
 
-~~~ {.ruby}
+```ruby
 require "./spec_helper"
 
 describe Sample do
@@ -37,7 +37,7 @@ describe Sample do
     false.should eq(true)
   end
 end
-~~~
+```
 
 As you see it created a `spec` for us which actually test nothing.
 Let's run the tests.
@@ -66,7 +66,7 @@ Let's run the tests.
 
 Yay! We got a failing(red) test. Now let's make it pass(green).
 
-~~~ {.ruby}
+```ruby
 require "./spec_helper"
 
 describe Sample do
@@ -76,7 +76,7 @@ describe Sample do
     true.should eq(true)
   end
 end
-~~~
+``
 
 Rerun the specs.
 
