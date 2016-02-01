@@ -22,13 +22,13 @@ What's awesome about Ruby?
 -   Get up and running quickly
 -   Dynamically typed
 
-So we could learn a lot from a language that handles concurrency well,
-and is fast and simple. We don't want to sacrifice anonymous functions, pretty syntax,
+So we could learn a lot from a language that's easy as Ruby, handles concurrency well,
+and is fast. We don't want to sacrifice anonymous functions, pretty syntax,
 or not making `AbstractFactoryFactoryImpls` just to get work done.
 
 I think that language is *Crystal*.
 
-Now: Crystal is not perfect, by far. It is getting better.
+Now: Crystal is not perfect. It is getting better.
 But the point is to *learn*. and using a language that's very familiar, yet very different, can teach us a lot.
 
 Here's "Hello World" in Crystal:
@@ -37,7 +37,7 @@ Here's "Hello World" in Crystal:
 puts "Hello, world!"
 ```
 
-Here's a parallel "Hello World" in Crystal:
+Here's a concurrent "Hello World" in Crystal:
 
 ```ruby
 channel = Channel(String).new
@@ -67,7 +67,7 @@ That's it. Note the stuff that's *similar* to Ruby:
 
 Here's some stuff that's *different*:
 
--   The compiler will yell at us harder if we mess up.
+-   Being compiled and statically typed the compiler will yell at us if we mess up.
 
 Oh, and:
 
