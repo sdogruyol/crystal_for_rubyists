@@ -39,9 +39,11 @@ Let's run it.
 
 Nothing! Yay :)
 
-Now that we create our first project. Let's use some libraries.
+Now that we create our first project. Let's use some external libraries.
 
-To add a new dependency to our project we use `shards`. `shards` is like `bundler` and `shard.yml` is like `Gemfile`.
+## Using Shards for dependency management
+
+To manage dependencies of a project we use `shards`. `shards` is like `bundler` and `shard.yml` is like `Gemfile`.
 
 Let's open up `shard.yml`.
 
@@ -55,22 +57,34 @@ authors:
 license: MIT
 ```
 
-This is a default `shard.yml` now let's add [Kemal](https://github.com/sdogruyol/kemal) and build a web app :)
+This is a default `shard.yml` and it contains the minimal necessary information about our project. Those are
+
+- `name` specifies the name of the project
+- `version` specifies the version of the project. Crystal itself uses [semver](http://semver.org/) for version management so it's a good convention for you to follow.
+- `authors` section specifies the authors of the project. By default this is taken from your global `git` configuration.
+- `license` specifies the type of your project license. By default this is `MIT`.
+
+Okay. That's great but what can we do with this `shard.yml`? Well we can use this file to add external libraries(we call it dependency) and manage them without even
+worrying about any folders / paths e.g.. Sweet isn't it?
+
+Now that we know the true power of `shards` let's add [Kemal](https://github.com/sdogruyol/kemal) to our `shards.yml` and build a simple web application :)
+
+Open up `shards.yml`. First we need to add `Kemal` as a dependency to our project. We do this by including
 
 ```yaml
 dependencies:
   kemal:
     github: sdogruyol/kemal
-    branch: master
+    version: 0.8.0
 ```
 
-Install the dependencies:
+That's great! Now we added `Kemal` to our project. First, we need to install it.
 
     $ shards install
     Updating https://github.com/sdogruyol/kemal.git
-    Installing kemal (master)
+    Installing kemal v0.8.0
 
-Okay now we can use `Kemal` in our project. Open up `src/sample.cr`
+Okay now we are ready to use `Kemal` in our project. Open up `src/sample.cr`
 
 ```ruby
 require "./sample/*"
@@ -84,6 +98,8 @@ module Sample
 
 end
 ```
+
+Look how we used `require` to access `Kemal` in our program.
 
 Let's run.
 
