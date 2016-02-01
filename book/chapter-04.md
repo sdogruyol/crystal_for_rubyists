@@ -67,9 +67,9 @@ This is a default `shard.yml` and it contains the minimal necessary information 
 Okay. That's great but what can we do with this `shard.yml`? Well we can use this file to add external libraries(we call it dependency) and manage them without even
 worrying about any folders / paths e.g.. Sweet isn't it?
 
-Now that we know the true power of `shards` let's add [Kemal](https://github.com/sdogruyol/kemal) to our `shards.yml` and build a simple web application :)
+Now that we know the true power of `shards` let's add [Kemal](https://github.com/sdogruyol/kemal) to our `shard.yml` and build a simple web application :)
 
-Open up `shards.yml`. First we need to add `Kemal` as a dependency to our project. We do this by including
+Open up `shard.yml`. First we need to add `Kemal` as a dependency to our project. We do this by including
 
 ```yaml
 dependencies:
