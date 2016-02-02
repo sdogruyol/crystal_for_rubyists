@@ -2,10 +2,9 @@
 
 # Testing
 
-
 Rubyists love testing, so before we go any farther, let's talk about
 testing. In Crystal, there is a testing framework built in, and it's
-pretty similar to `RSpec`.
+named `spec`. It's pretty similar to `RSpec`.
 
 Let's continue with the project we created in Chapter 04.
 
@@ -23,11 +22,13 @@ As you remember `crystal` created this project structure for us.
         -- version.cr
       -- sample.cr
 
-Did you see that `spec` folder? Yes, as you guess Crystal created the folder and first specs for us.
-In Crystal a `class` is tested with corresponding `_spec` file. In this case `spec/sample_spec.cr`.
+Did you see that `spec` folder? Yes, as you guess Crystal created this folder and the first spec for us.
+In Crystal a file is tested with corresponding `_spec` file. Since we named our project as `sample` it created a file named `sample.cr`
+and the corresponding spec with `spec/sample_spec.cr`.
 
-Let's see what's inside. Open up `spec/sample_spec.cr`
+By the way, in this context `spec` and `unit test` means the same so we can use them interchangeably.
 
+Without further ado lets open up `spec/sample_spec.cr`
 
 ```ruby
 require "./spec_helper"
@@ -41,11 +42,20 @@ describe Sample do
 end
 ```
 
-As you see it created a `spec` for us which actually test nothing.
-Let's run the tests.
+Now this file is pretty interesting. There a three important keywords, `describe`, `it` and `should`.
+
+Those keywords are only used in `spec`s with the following purposes.
+
+- `describe` lets you group related specs.
+- `it` is used for defining a spec with the given title in between "".
+- `should` is used for making assumptions about the spec.
+
+As you can see this file has a group `describe`d as `Sample` and `it` has one spec with the title of `works` which makes the
+assumption that false `should` equal true.
+
+You might be asking 'How do we run these tests?'. Well `crystal` command to the rescue.
 
     $ crystal spec
-    crystal spec
     F
 
     Failures:
@@ -66,7 +76,8 @@ Let's run the tests.
     crystal spec ./spec/sample_spec.cr:6 # Sample works
 
 
-Yay! We got a failing(red) test. Now let's make it pass(green).
+Yay! We got a failing(red) test. Reading the output we can easily find which spec failed.
+Here it's the spec within the group of `Sample` titled `works` a.k.a `Sample works`. Let's make it pass(green).
 
 ```ruby
 require "./spec_helper"
