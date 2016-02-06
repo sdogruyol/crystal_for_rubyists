@@ -7,6 +7,10 @@ You need pandoc. And if you want .mobi you need kindlegen.
 
     $ make all
 
+### Thanks
+
+Thanks to [@steveklabnik](https://github.com/steveklabnik) for his awesome work on [Rust for Rubyists](https://github.com/steveklabnik/rust_for_rubyists).
+
 ### License
 
 Crystal for Rubyists is released as Free Software under the AGPLv3. See LICENSE
