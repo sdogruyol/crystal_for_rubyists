@@ -32,7 +32,7 @@ As the name stands a `Channel` is a channel between a sender and the receiver. T
 Let's take a line by line look at our previous example.
 
 ```ruby
-    channel = Channel(String).new
+channel = Channel(String).new
 ```
 
 We create a `Channel` with `Channel(String).new`. Note that we are creating a `Channel` which will `send` and `receive` messages with type of `String`.
