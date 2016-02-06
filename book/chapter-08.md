@@ -18,17 +18,16 @@ end
 
 In Crystal we use the keyword `spawn` to make something work in the background without blocking the main execution.
 
-To achieve this `spawn` uses a lightweight thread called `Fiber`. `Fiber`s are very cheap to create and you can easily
+To achieve this `spawn` creates a lightweight thread called `Fiber`. `Fiber`s are very cheap to create and you can easily
 create tens of thousands of `Fiber`s on a single core.
 
 Okay, that's really cool! We can use `spawn` to make stuff work in the background but how do we get something back from a `Fiber`.
 
 Now that's where `Channel`s come to play.
 
-Channel
-=======
+## Channel
 
-As the name stands a `Channel` is a channel between a sender and the receiver. Therefore a `Channel` lets them communicate with `send` and `receive` methods.
+As the name stands a `Channel` is a channel between a sender and the receiver. Therefore a `Channel` lets each other communicate with `send` and `receive` methods.
 
 Let's take a line by line look at our previous example.
 
