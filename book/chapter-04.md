@@ -2,7 +2,6 @@
 
 # Creating a new project
 
-
 Up until now we've used the `crystal` command to only run our code.
 
 Actually `crystal` command is pretty useful and does lot more than that. (check `crystal --help` for more)

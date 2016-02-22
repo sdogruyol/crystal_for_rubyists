@@ -15,7 +15,7 @@ should be snappy!
 Crystal has a [lovely installation page](http://crystal-lang.org/docs/installation/index.html),
 so I recommend you just go check that out and download the proper version.
 
-Note that this book has been tested with Crystal 0.10.0, and so if you use the latest
+Note that this book has been tested with Crystal 0.12.0, and so if you use the latest
 nightly, something may have changed.
 
 From Source
@@ -30,7 +30,7 @@ instructions!
 
 ### Future Proofing
 
-The version this book is written for is 0.10.0. While the language itself is
+The version this book is written for is 0.12.0. While the language itself is
 pretty stable, things like the standard library and some major subsystems are
 being revised. I'll be tweaking it with every new release.
 

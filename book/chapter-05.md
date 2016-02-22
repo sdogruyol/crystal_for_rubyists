@@ -75,7 +75,6 @@ You might be asking 'How do we run these tests?'. Well `crystal` command to the 
 
     crystal spec ./spec/sample_spec.cr:6 # Sample works
 
-
 Yay! We got a failing(red) test. Reading the output we can easily find which spec failed.
 Here it's the spec within the group of `Sample` titled `works` a.k.a `Sample works`. Let's make it pass(green).
 

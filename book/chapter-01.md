@@ -2,7 +2,6 @@
 
 # Why Crystal?
 
-
 You already write software in Ruby. It pays your bills. You enjoy it.
 Why should you care about Crystal?
 
