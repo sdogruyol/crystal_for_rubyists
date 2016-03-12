@@ -10,7 +10,7 @@ uses C libraries.
 
 For example Crystal uses `libpcre` for it's `Regex` implementation.
 
-Like i said it's super easy to write bindings for C. Crystal itself links to `libpcre` like this
+Like I said it's super easy to write bindings for C. Crystal itself links to `libpcre` like this
 
 ```ruby
 @[Link("pcre")]
