@@ -123,7 +123,7 @@ Run it.
     Finished in 0.61 milliseconds
     2 examples, 0 failures, 0 errors, 0 pending
 
-Awesome! This shows off how elses work, as well. It's probably what you
+Awesome! This shows off how `else` work, as well. It's probably what you
 expected. Go ahead and try to refactor this into a one-liner.
 
 Done? How'd you do? Here's mine:
