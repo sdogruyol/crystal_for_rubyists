@@ -14,6 +14,7 @@ EPUB_OPTS=--toc --smart --epub-cover-image=cover.png --epub-metadata=book/metada
 HTML_OPTS=--smart --to=html5 --template=book/template.html
 
 CLEAN_FILES=$(patsubst %.md,%.html,$(wildcard book/chapter-*.md)) \
+						book/book.html \
 						crystal-for-rubyists.epub \
 						crystal-for-rubyists.pdf \
 						crystal-for-rubyists.mobi \
