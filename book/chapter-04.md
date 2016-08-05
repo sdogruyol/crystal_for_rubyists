@@ -18,7 +18,7 @@ For example we can use it to create a new Crystal project.
       create  sample/src/sample/version.cr
       create  sample/spec/spec_helper.cr
       create  sample/spec/sample_spec.cr
-Initialized empty Git repository in
+    Initialized empty Git repository in
 /Users/serdar/crystal_for_rubyists/code/04/sample/.git/
 
 Awesome. `crystal` helped us create a new project. Let's see what it did for us.
@@ -74,14 +74,18 @@ Open up `shard.yml`. First we need to add `Kemal` as a dependency to our project
 dependencies:
   kemal:
     github: sdogruyol/kemal
-    version: 0.8.0
+    version: 0.14.1
 ```
 
 That's great! Now we added `Kemal` to our project. First, we need to install it.
 
     $ shards install
     Updating https://github.com/sdogruyol/kemal.git
-    Installing kemal v0.8.0
+    Updating https://github.com/luislavena/radix.git
+    Updating https://github.com/jeromegn/kilt.git
+    Installing kemal (0.14.1)
+    Installing radix (0.3.0)
+    Installing kilt (0.3.3)
 
 Okay now we are ready to use `Kemal` in our project. Open up `src/sample.cr`
 
@@ -96,6 +100,8 @@ module Sample
   end
 
 end
+
+Kemal.run
 ```
 
 Look how we used `require` to access `Kemal` in our program.
