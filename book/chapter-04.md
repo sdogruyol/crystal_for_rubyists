@@ -18,8 +18,7 @@ For example we can use it to create a new Crystal project.
       create  sample/src/sample/version.cr
       create  sample/spec/spec_helper.cr
       create  sample/spec/sample_spec.cr
-    Initialized empty Git repository in
-/Users/serdar/crystal_for_rubyists/code/04/sample/.git/
+    Initialized empty Git repository in /Users/serdar/crystal_for_rubyists/code/04/sample/.git/
 
 Awesome. `crystal` helped us create a new project. Let's see what it did for us.
 
