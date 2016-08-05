@@ -158,7 +158,7 @@ build FizzBuzz, let's make it work. First thing we need to do is print
 out all the numbers from one to 100. It's easy!
 
 ```ruby
-1...100.times do |num|
+100.times do |num|
   puts num
 end
 ```
@@ -171,12 +171,12 @@ they're actually not even in the executable:
 Now we can put the two together:
 
 ```ruby
-1...100.times do |num|
+100.times do |num|
   answer = ""
 
   if div_by_fifteen num
     answer = "FizzBuzz"
-  elsif div_by_three(num)
+  elsif div_by_three num
     answer = "Fizz"
   elsif div_by_five num
     answer = "Buzz"
@@ -191,10 +191,10 @@ end
 Because the `if` returns a value, we could also do something like this:
 
 ```ruby
-1..100.times do |num|
+(1..100).each do |num|
   answer = if div_by_fifteen num
     "FizzBuzz"
-  elsif div_by_three(num)
+  elsif div_by_three num
     "Fizz"
   elsif div_by_five num
     "Buzz"
@@ -205,6 +205,8 @@ Because the `if` returns a value, we could also do something like this:
   puts answer
 end
 ```
+
+Notice that we also changed `100.times` to `(1..100).each`, to make `num` go from 1 to 100 instead of from 0 to 99.
 
 Try running it.
 
