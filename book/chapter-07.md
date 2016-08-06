@@ -20,11 +20,16 @@ add 3, 5 # 8
 This is the same in Ruby! We just defined a method that adds two numbers.
 What if we try to add a number to a string?
 
+```ruby
+add 3, "Serdar"
+```
+
 First let's do that in Ruby.
 
 ```ruby
-add 3, "Serdar"
-TypeError: String can't be coerced into Fixnum
+types.cr:2:in `+': String can't be coerced into Fixnum (TypeError)
+	from types.cr:2:in `add'
+	from types.cr:5:in `<main>'
 ```
 
 What??? We just got a `TypeError` but we don't have to care about types in Ruby ( or not :)).
@@ -32,7 +37,7 @@ This is also a `runtime error` meaning that your program just crashed at runtime
 
 Now let's do the same in Crystal.
 
-    Error in ./types.cr:7: instantiating 'add(Int32, String)'
+    Error in ./types.cr:5: instantiating 'add(Int32, String)'
 
     add 3, "Serdar"
     ^~~
@@ -52,6 +57,7 @@ Now let's do the same in Crystal.
     - Int32#+()
 
     x + y
+      ^
 
 Okay, that's quite a scary output but actually it's great. Our Crystal code didn't compile and also told us that there's no
 overload for `Int32#+` and showed us the possible overloads. This is a `compile time error` meaning that our code didn't compile
@@ -69,12 +75,12 @@ puts add 3, "Serdar"
 
 Run it.
 
-    Error in ./types.cr:7: no overload matches 'add' with types Int32, String
+    Error in ./types.cr:5: no overload matches 'add' with types Int32, String
     Overloads are:
     - add(x : Number, y : Number)
 
-    add 3, "Serdar"
-    ^~~
+    puts add 3, "Serdar"
+         ^~~
 
 Awesome! Our program didn't compile again. And this time with shorter and more accurate error output.
 We just used `type restriction` on `x` and `y`. We restricted them to be `Number` and Crystal is smart
