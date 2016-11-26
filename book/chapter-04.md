@@ -72,18 +72,18 @@ Open up `shard.yml`. First we need to add `Kemal` as a dependency to our project
 ```yaml
 dependencies:
   kemal:
-    github: sdogruyol/kemal
-    version: 0.14.1
+    github: kemalcr/kemal
+    version: 0.17.2
 ```
 
 That's great! Now we added `Kemal` to our project. First, we need to install it.
 
     $ shards install
-    Updating https://github.com/sdogruyol/kemal.git
+    Updating https://github.com/kemalcr/kemal.git
     Updating https://github.com/luislavena/radix.git
     Updating https://github.com/jeromegn/kilt.git
-    Installing kemal (0.14.1)
-    Installing radix (0.3.0)
+    Installing kemal (0.17.2)
+    Installing radix (0.3.5)
     Installing kilt (0.3.3)
 
 Okay now we are ready to use `Kemal` in our project. Open up `src/sample.cr`

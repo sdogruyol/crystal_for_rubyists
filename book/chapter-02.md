@@ -30,7 +30,7 @@ instructions!
 
 ### Future Proofing
 
-The version this book is written for is 0.12.0. While the language itself is
+The version this book is written for is 0.20.0. While the language itself is
 pretty stable, things like the standard library and some major subsystems are
 being revised. I'll be tweaking it with every new release.
 
