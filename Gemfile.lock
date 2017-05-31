@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/sdogruyol/s3deploy.git
+  remote: https://github.com/sdogruyol/s3deploy.git
   revision: 7bdf5a7a234e824697a778d0ab51c5277fb0f753
   specs:
     s3deploy (0.1.2)
@@ -12,10 +12,10 @@ GEM
       builder
       mime-types
       xml-simple
-    builder (3.2.2)
-    mime-types (3.0)
+    builder (3.2.3)
+    mime-types (3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2015.1120)
+    mime-types-data (3.2016.0521)
     xml-simple (1.1.5)
 
 PLATFORMS
@@ -23,3 +23,6 @@ PLATFORMS
 
 DEPENDENCIES
   s3deploy!
+
+BUNDLED WITH
+   1.14.6
