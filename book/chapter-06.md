@@ -19,7 +19,7 @@ First, let's create our project.
 
     $ crystal init app fizzbuzz
 
-Let's write our first failing test. Open up `/spec/fizzbuz_spec.cr`
+Let's write our first failing test. Open up `/spec/fizzbuzz_spec.cr`
 
 ```ruby
 require "./spec_helper"
